@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making beautiful mini website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="top-texts">
+            <h3 class="top-texts-h3">Lorem ipsum dolor sit</h3>
+            <h1 class="top-texts-h1">Responsive layouts don't  
+                have to be a struggle
+                </h1>
+        </div>
+    </header>
+
+    <main class="main-part-1">
+        <div class="container">
+            <h2 class="main-1-h2"> Quality Designs</h2>
+            <div class="main-1-flex-parent-1">
+                <div class="main-1-flex-primary">
+                    <p class="flex-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iusto repellat delectus suscipit sint nesciunt eius illo incidunt ducimus in id dolorem numquam quaerat praesentium, accusantium natus repudiandae, ad quibusdam?</p>
+                </div>
+                <div class="main-1-flex-secondary">
+                    <p class="flex-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fuga maxime deleniti sequi doloremque perferendis pariatur sint, nam quisquam velit esse repellendus voluptatum facere cumque aliquid ipsa tempora ipsam inventore.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <main class="main-part-2">
+        <div class="main-flex-parent-2 container">
+            <div class="texts">
+                <h2>Made Custom for you</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit porro odit pariatur ad nisi nemo placeat veritatis soluta laudantium.</p>
+            </div>
+            <div class="flex-2-img">
+                <img src="using/image-01.jpg">
+            </div>
+        </div>
+        
+    </main>
+
+    <main class="main-part-3">
+        <div class="main-flex-parent-3 container">
+            <div class="last-img"><img src="using/image-02.jpg" alt="Beautiful landscape"></div>
+        
+        <div class="texts-2">
+            <h2>Created with care</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, impedit ad veritatis, ex quidem a, quaerat accusamus sed vel numquam sint eveniet</p>
+        </div>
+        </div>
+    </main>
+</body>
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'roboto',sans-serif;
+        
+    }
+    header {
+        padding: 150px 0;
+        margin: 0;
+        background-color: #F3EED9;
+        
+    }
+
+    .top-texts{
+        margin: 0 auto;
+        max-width: 1128px;
+        
+        width: 70%;
+        
+    }
+
+    .top-texts-h3 {
+        text-transform: uppercase;
+        width: 35%;
+        margin: 0 auto;
+        text-align: center;
+        color: #824936;
+
+        
+        
+    }
+    .top-texts-h1 {
+        text-transform: uppercase;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 15px;
+        color: #824936;
+        
+    }
+    .main-part-1 {
+        padding: 110px 0;
+        margin: 0;
+        background-color: #fff;
+        color: black;
+    }
+    .container {
+        width: 80%;
+        max-width: 1128px;
+        margin: 0 auto;
+    }
+    .main-1-h2 {
+        text-align: center;
+        font-size: 2em;
+        color: #824936;
+        
+    }
+    .main-1-flex-parent-1 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-1-flex-primary {
+        text-align: center;
+        margin-right: 20px;
+        
+        
+    }
+    .main-1-flex-secondary {
+        text-align: center;
+        margin-left: 20px;
+        
+        
+    }
+
+    .main-part-2 {
+        padding: 110px 0;
+        background-color: #222C2A;
+        color: white;
+
+    }
+    .main-flex-parent-2 {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .texts {
+        width: 50%;
+    }
+
+    .flex-2-img {
+        width: 45%
+    }
+    .main-part-3 {
+        padding: 110px 0;
+        background-color: #824936;
+        color: cornsilk;
+    }
+    .main-flex-parent-3 {
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+    .last-img {
+        width: 50%;
+    }
+    .texts-2 {
+        width: 45%;
+    }
+
+    @media  all and (max-width: 600px) {
+        .main-1-flex-parent-1 {
+            display: flex;
+            flex-direction: column;
+        }
+        .main-1-flex-primary {
+        text-align: center;
+        margin-right: 2px;
+        
+        
+    }
+    .main-1-flex-secondary {
+        text-align: center;
+        margin-left: 2px;
+        
+        
+    }
+    .main-flex-parent-2 , .main-flex-parent-3{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .texts , .texts-2{
+        width: 100%;
+    }
+
+    .flex-2-img , .last-img{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .main-part-2, .main-part-1, .main-part-3 {
+        padding: 90px 0;
+    }
+    
+    }
+
+    @media all and (max-width: 994px) {
+        .top-texts {
+            width: 100%;
+        }
+        .top-texts-h3 {
+            width: 60%;
+        }
+        .top-texts-h1{
+            width: 80%;
+        }
+    }
+
+
+    @media all and (max-width: 406px) {
+
+
+         .top-texts {
+            width: 90%;
+        }
+        .top-texts-h3 {
+            width: 100%;
+            font-size: small;
+        }
+        .top-texts-h1{
+            width: 100%;
+        }
+    }
+</style>
+</html>

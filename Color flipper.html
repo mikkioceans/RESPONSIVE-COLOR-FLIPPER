@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Color Flipper</title>
+</head>
+<body>
+    <h1 > My Color Flipper : <span class="color">#FFFFF</span></h1>
+    <button id="btn">Switch Color</button>
+</body>
+
+<style>
+     
+     body {
+               display: grid;
+               place-content: center;
+               min-height: 100vh;
+     }
+    h1 { 
+        color: green;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5em;
+    }
+
+    #btn {
+        background-color: chocolate;
+        color: cornsilk;
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 1em;
+
+    }
+
+    #btn:hover {
+        background-color: cornsilk;
+        color: chocolate;
+
+    }
+</style>
+
+<script>
+    let colors = ["#33CCFF", "#FFCCFF" ,"#C0C0C0" ,"#00FF00","#00FFFF","#CD5C5C" , "#FA8072" ];
+    let color = document.querySelector(".color");
+
+    const Myswitch = document.getElementById("btn");
+    
+
+    Myswitch.addEventListener("click", function () {
+        const randomnumber = Getrandomnumber();
+
+        document.body.style.backgroundColor = colors[randomnumber];
+        color.textContent = colors[randomnumber];
+
+    });
+
+     function Getrandomnumber() {
+
+      return   Math.floor(Math.random() * colors.length)
+
+    }
+</script>
+</html>
